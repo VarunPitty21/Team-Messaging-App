@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM : Invites</title>
+    <link rel="stylesheet" href="/invites.css">
+</head>
+<body>
+    <%if(invites.length>0){%>
+        <div id="container">
+            <%for(var i=0;i<invites.length;i++){%>
+                <div id="<%=invites[i].room_id%>" class="invitess">
+                    <h4><%=invites[i].roomname%></h4>
+                    <h5>Invited by : <%=invites[i].createdBy%></h5>
+                    <button class="accept">Accept</button>
+                    <button class="decline">Decline</button>
+                </div> 
+            <%}%>
+        </div>
+    <%}%>
+
+    <%if(error.length>0){%>
+        <h3 id="error"><%=error%></h3>
+    <%}%>
+
+    <script src="/invite.js"></script>
+</body>
+</html>

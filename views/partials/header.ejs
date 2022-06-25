@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/header.css">
+<div id = "header">
+    <div id="users">
+        <img src="/<%=profile_picture%>" alt="" height="100px" width="100px" id="profile-pic">
+        <h2 id="username-div"><%=username%></h2>
+    </div>
+    <div id="log">
+        <a href="/changePassword/<%=token%>"><button>Change Password</button></a><br>
+        <a href="/logout"><button>Logout</button></a><br>
+    </div>
+</div>
+
+<div id="block">
+    <a href="/createChannel"><button>Create Channel</button></a><br>
+    <a href="/invites"><button>Invites</button></a><br>
+    <a href="/dashboard"><button>Dash board</button></a>
+</div>

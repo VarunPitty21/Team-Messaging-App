@@ -1,0 +1,53 @@
+#header{
+    background-image: linear-gradient(rgb(171, 89, 247),rgb(223, 201, 244));
+    /* background-color: blueviolet; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#users{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 25px;    
+}
+
+#profile-pic{
+    border-radius: 50%;
+}
+
+#log{
+    padding: 10px;
+}
+#log button{
+    margin: 10px;
+    width: 100%;
+    background-color: rgb(223, 201, 244);
+    padding: 5px;
+    border: .5px solid white;
+    border-radius: 10px;
+}
+
+#log button:hover{
+    background-color: rgb(197, 157, 236);
+}
+
+#block{
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+#block button{
+    padding: 10px 20px 10px 20px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+#block button:hover{
+    background-color: rgb(197, 157, 236);
+    color: black;
+}

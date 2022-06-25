@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM : Create Channel</title>
+    <link rel="stylesheet" href="/auth.css">
+</head>
+<body>
+    <div id="container">
+        <label>Channel name <input type="text" id="name-input" required></label><br>
+        <label>Channel Description <input type="text" id="description-input" required></label><br>
+        <div id="tags-div">
+            <div id="tags">
+
+            </div>
+            <label >Enter Tag<input type="text" id="tags-input"></label>
+            <button id="addTag">Add tag</button>
+        </div>
+
+        <div id="user-div">
+            <div id="users">
+
+            </div>
+            <label >Enter username<input type="text" id="user-input"></label>
+            <button id="addUser">Add user</button>
+        </div>
+
+        <button id="createChannel">Create Channel</button>
+    </div>
+
+    <%if(error.length>0){%>
+        <h3 id="error"><%=error%></h3>
+    <%}%>
+
+    <script src="/createChannel.js"></script>
+</body>
+</html>

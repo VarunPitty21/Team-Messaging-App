@@ -1,0 +1,36 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: blueviolet;
+}
+
+#error{
+    background-color:aqua ;
+    padding: 10px;
+}
+
+.invitess{
+    border: 1px solid white;
+    padding: 10x;
+    margin: 10px;
+    background-color: rgb(217, 189, 244);
+    border-radius: 10px;
+}
+h4,h5{
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+button{
+    margin: 5px;
+    background-color: white(223, 201, 244);
+    padding: 5px;
+    border: .5px solid white;
+    border-radius: 10px;
+}
+.accept:hover{
+    background-color: rgb(142, 254, 124);
+}
+.decline:hover{
+    background-color: rgb(253, 84, 84);
+}

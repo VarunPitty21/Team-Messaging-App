@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#channel-info h2,h5{
+    margin: 0px;
+    padding: 3px 0px 3px 0px;
+}
+
+#channel-info{
+    padding: 15px;
+    background-image: linear-gradient(to right,blueviolet ,white);
+    color: white;
+}
+.container{
+    border: 1px solid black;
+}
+
+.post{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(210, 176, 243);
+    margin: 10px;
+    padding: 10px;
+}
+
+.post h5,p{
+    margin: 0px;
+}
+
+.post h5 p{
+    opacity: 70%;
+}
+
+.message{
+    padding: 10px;
+    font-size: 20px;
+}
+
+#newPost{
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid black;
+}
+#newPost input,button{
+    margin: 10px;
+}

@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    margin: 0px;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.channel{
+    margin: 5px;
+    background-image:linear-gradient(to bottom ,rgb(223, 201, 244),white);
+    border: 1px solid white;
+}
+.channel h3{
+    background-image: linear-gradient(to right,rgb(202, 152, 253),rgb(223, 201, 244));
+    margin: 0px;
+    padding: 10px;
+}
+
+.channel h5,p{
+    padding: 10px;
+    margin: 0px;
+}
+
+.channel h5{
+    font-size: 14px;
+}
+
+.users{
+    padding: 10px;
+}
+
+.channel p{
+    font-size: 12px;
+}

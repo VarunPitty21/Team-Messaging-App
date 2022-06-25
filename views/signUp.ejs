@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM : Sign Up</title>
+    <link rel="stylesheet" href="/auth.css">
+</head>
+<body>
+
+    <div id="container">
+        <form action="/signUp" method="post" enctype="multipart/form-data">
+            <label >Profile Picture :<input type="file" name="profile-pic" id="profile-pic"></label><br>
+            <label >E-mail : <input required type="email" name="email" placeholder="Enter your email"></label><br>
+            <label >Username : <input required type="text" name="username" placeholder="Enter your username"></label><br>
+            <label>Password : <input required type="password" name="password" placeholder="Enter your Password"></label><br>
+            <label>Region : <input type="text" name = "region" placeholder="Enter region"></label>
+            <button type="submit">Sign Up</button>
+        </form>
+    
+        <a href="/">Login</a>
+    </div>
+    <%if(error.length>0){%>
+        <h3 id="error"><%=error%></h3>
+    <%}%>
+</body>
+</html>

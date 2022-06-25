@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM : <%=channel.roomname%></title>
+    <link rel="stylesheet" href="/channel.css">
+</head>
+<body>
+    <%-include("./partials/header.ejs",{username : username,token : token,profile_picture: profile_picture})%>
+    
+    <div id="channel-info">
+        <h2>Channel Name : <%=channel.roomname%></h2>
+        <h5>Description : <%=channel.description%></h5>
+        <label id="tagss">Tags : 
+        <%for(var k=0;k<channel.tags.length;k++){%>
+            <li><%=channel.tags[k]%></li>
+        <%}%>
+    </label>
+    
+    <p>Created By : <%=channel.createdBy%></p>
+    <p>Created At : <%=channel.createdAt%></p>
+    </div>
+    
+    <div class="container" id="<%=channel._id%>"  >
+        <%if(posts.length>0){%>
+            <%for(var i=0;i<posts.length;i++){%>
+            
+                <div class="post">
+                    <h5><%=posts[i].username%> <p><%=posts[i].createdAt%></p></h5>
+                    <p class="message"><%=posts[i].text%></p>
+                    
+                </div>
+                
+            <%}%>
+        <%}%>
+    </div>
+
+    <div id="newPost">
+        <form action="/newPost" method="post" id="chat-form">
+            <label >Enter your Post</label>
+            <input type="text" name = "text" id="text"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <%if(error.lenght>0){%>
+        <%=error%>
+    <%}%>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/channel.js"></script>
+</body>
+</html>

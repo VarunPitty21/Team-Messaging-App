@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM : Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+    <div id="container" style="border: 2px solid black;">
+        <h2>Top 5 trending Channels</h2>
+
+        <%for(var i = 0;i<channel.length;i++){%>
+            <div class="channel"  style="border: 1px solid black" id="<%=channel[i]._id%>">
+                <h3>Room Name : <%=channel[i].roomname%></h3>
+                <h5>Description : <%=channel[i].description%></h5>
+                <p>Created By : <%=channel[i].createdBy%></p>
+                <p>Tags : <%=channel[i].tags%></p>
+            </div>
+        <%}%>
+    </div>
+
+    <div id="container2" style="border: 2px solid black;">
+        <h2>Top 5 trending Users</h2>
+
+        <%for(var i = 0;i<users.length;i++){%>
+            <div class="users"  style="border: 1px solid black">
+                <h3><%=users[i]._id%></h3>
+            </div>
+        <%}%>
+    </div>
+
+</body>
+</html>
